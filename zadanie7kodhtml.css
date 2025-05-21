@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+ <meta charset="utf-8">
+ <title> </title>
+</head>
+<style>
+table {
+border: 2px solid black;
+width: 100%;
+margin: auto;
+border-collapse: collapse;
+background-color: aqua;
+}
+td { 
+padding: 15px;
+font-family: Arial, sans-serif;
+}
+</style>
+<body>
+<table>
+<tr>
+<td>
+<strong>
+<p align="left"> <font color="black" size="4" face="Arial"> Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu 
+lokalnego,</font> </p> <br></strong>
+<p align="left"> <font color="blue" size="3" face="Arial">Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi 
+strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany. 
+O tym, który to będzie element, decyduje słowo kluczowe "selektor".</font> </p> <br><br>
+</td>
+</tr>
+</table>
+<p align="left"> <font color="black" size="4" face="Arial"> Co może być selektorem,</font> </p> <br>
+<p align="left"> <font color="blue" size="3" face="Arial">Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td 
+(komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami,nadajemy atrybuty formatowania. </font> </p> <br>
+<p align="left"> <font color="black" size="4" face="Arial"> Co wipisujemy jako "cechę". Jakie jest znaczenie średników,</font> </p> <br>
+<p align="left"> <font color="blue" size="3" face="Arial">Jako "cecha" czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie 
+konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color). 
+Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone 
+średnikami.</font> </p> <br><br>
+<p align="left"> <font color="black" size="4" face="Arial"> Co wipisujemy jako "wartość" (w deklaracji stylu).</font> </p> <br>
+<p align="left"> <font color="blue" size="3" face="Arial">Jako wyraz "wartość" (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla 
+koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po 
+której stoi w deklaracji. </font> </p> <br><br>
+ </body>
+</html>

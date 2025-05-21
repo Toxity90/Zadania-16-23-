@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html lang="pl-PL">  
+     <head> 
+	 <style>
+	 body {
+	 font-size: 30px;
+	 background-color: white;
+	 color: black;
+	 }
+	 p {
+	 font-size: 40px;
+	 background-color: white;
+	 color: red;
+	 }
+	 </style>
+	 
+             <meta charset="utf-8"> 
+             <title>       </title> 
+     </head> 
+    <body> 
+<p>Rodzaje selektorów:<br></p>
+ <h1><p>Selektor prosty w CSS</h1></p>
+    <ol>
+        <li>Selektor typu 
+            <ul>
+                Przykłady:
+                    <ul>
+                        <li><code>p</code>-akapit</li>
+                        <li><code>h1</code>-nagłówek pierwszego stopnia</li>
+                        <li><code>div</code>- kontener ogólny</li>
+                    </ul>
+                
+            </ul>
+        </li>- Selektorem prostym jest znaczniki języka XHTML/HTML (np. p, h3, table, img) przypisany 
+do elementu, który chcesz w danym momencie formatować.  
+Styl zdefiniowany dla przykładowego selektora   p    będzie odnosił się wyłącznie do 
+akapitów zamkniętych w znacznikach i nie będzie wpływał na pozostałe elementy 
+strony WWW.<br><br>
+ <h1><p>Selektor uniwersalny</h1></p>
+    <ol>
+        Jak działa
+            <ul>
+			<li>
+                        <ul>Obejmuje wszystkie elementy na stronie</ul>
+						<li>
+                        <ul>Działa globalnie</ul></li>
+						<li>
+                        <ul>Przykład: resetowanie marginesów i paddingów</ul></li>
+                    </ul>
+					</li>
+                
+            
+        </li>
+<br>- Selektor taki pozwala ustalić określone atrybuty dla wszystkich elementów strony, a więc dla 
+różnych selektorów typu. Możemy za pomocą tej komendy nadać to samo formatowanie dla 
+wszystkich elementów na całej stronie, niezależnie od ich typu (p, h1, li itd.).  <br>
+Uwaga1 <br>
+Niestety jego działanie nie zawsze jest jednoznaczne, dlatego dużo bezpieczniej jest używać 
+selektora typu dla elementu body, chyba że zastosujemy to polecenie w odniesieniu do klasy 
+selektorów. <br>
+Uwaga2 <br>
+Jeśli selektor uniwersalny chcemy zastosować do selektora innego niż selektor typu (w 
+połączeniu z selektorami: atrybutów, specjalnymi, pseudoelementów lub pseudoklas), to 
+gwiazdkę można pominąć. <br><br>
+<h1><p>Selektor potomka</h1></p>
+    <ol>
+        <li>Jak działa
+            <ul>
+                <li>Wybiera elementy znajdujące się wewnątrz innego elementu
+                    <ul>
+                        <li>Bezpośrednie i zagnieżdżone</li>
+                        <li>Brak ograniczenia do dzieci</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+<br>- Przy użyciu selektora potomka można formatować elementy, które sa zawarte wewnątrz
+innych znaczników, czyli leżą niżej w hierarchii drzewa dokumentu.<br>
+Selektor potomka pozwala nadać atrybuty elementom, które leżą niżej w hierarchii drzewa
+dokumentu (zawierają się w innych zewnętrznych znacznikach). Dzięki temu możemy
+zmienić typ formatowania tylko dla określonych elementów, które są podrzędne w stosunku
+do innych (przodków). Potomek nie musi leżeć bezpośrednio wewnątrz znacznika przodka.
+Może być zawarty jeszcze w innych znacznikach, które z kolei zawierają się w rodzicu. Nie
+jest wtedy konieczne podawanie w deklaracji wszystkich rodziców, a jedynie przodka i
+potomka.<br>
+Selektor taki jest szczególnie przydatny, dla określenia wyglądu odsyłaczy wewnątrz bloku,
+ponieważ jeśli nie określimy dla nich tzw. pseudoklas odsyłaczowych, nie odziedziczą one
+formatowania po przodkach.<br><br>
+<h1><p>Selektor dziecka</h1></p>
+    <ol>
+        <li>Jak działa
+            <ul>
+                <li>Wybiera tylko bezpośrednie dzieci danego elementu
+                    <ul>
+                    <li>Nie wybiera wnuków ani dalszych potomków</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+		
+<br>- służy do definiowania elementów, które znajdują się o jeden rząd niżej w
+hierarchii drzewa dokumentów.<br><br>
+ <h1><p>Selektor rodzeństwa</h1></p>
+    <ol>
+        <li>Jak działa
+            <ul>
+                <li>Wybiera elementy będące rodzeństwem w drzewie DOM
+                    <ul>
+                        <li>Elementy na tym samym poziomie zagnieżdżenia</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+<br>- Zastosowanie selekora rodzeństwa można przypisać styl elementowi bezpośrednio
+sąsiadującemu z innymi. By warunek został spełniony, oba selektory muszą mieć wspólnego
+„rodzica”.<br><br>
+<h1><p>Selektor atrybutu</h1></p>
+    <ol>
+        <li>Jak działa
+            <ul>
+                <li>Wybiera elementy na podstawie obecności lub wartości atrybutu
+                    <ul>
+                        <li>Bardzo elastyczny selektor</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+<br>-Selektorem może być dowolny znacznik, np. ( p – akapit ), ( h1 – nagłówek ), (td - komórka
+tabeli).Atrybut oznacza konkretny parametr nadany znacznikowi z poziomu języka (X)HTML.
+Natomiast "cecha" oraz "wartość" określają atrybuty elementu nadane poprzez style i
+zostaną opisane w dalszych rozdziałach.
+Polecenie to może zostać wykorzystane dla elementów, którym z poziomu (X)HTML został
+nadany określony atrybut (przy czym jego wartość nie ma znaczenia).
+uwaga
+W języku XHTML wszystkie atrybuty w selektorach muszą być pisane małymi literami.<br><br>
+
+
+
+    </body> 
+  </html> 

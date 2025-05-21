@@ -1,0 +1,32 @@
+p#pogrubienie_mach{
+font-size: 33px;
+color:rgb(123,93,205);
+}
+
+p#pochylona_mach{
+font-size: 39pt;
+color: rgb(228,193,105);
+}
+
+p#index_gorny_mach{
+font-size: 1.3cm;
+color: rgb(148,143,25);
+}
+
+p#index_dolny_mach{
+font-size: 2.3cm;
+color: rgb(48,243,225);
+}
+
+p#mono_mach{
+font-size: 43px;
+color: rgb(20,223,105);
+}
+
+p#powiekszenie_mach{
+color: rgb(78,63,155);
+}
+
+p#pomniejszenie_mach{
+color: rgb(178,163,55);
+}
